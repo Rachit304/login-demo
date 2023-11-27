@@ -1,0 +1,16 @@
+
+    <mat-form-field appearance="fill">
+        <mat-icon matPrefix >search</mat-icon>
+        <input type="text" matInput placeholder="Search Movies"   (keyup)="getMovieData($event)"  >
+        
+    </mat-form-field>
+
+    <div *ngFor="let movie of movies">
+        <app-card [movie] ='movie'></app-card>
+    </div>
+
+
+
+
+<button mat-button (click)="logout()">Logout</button>
+

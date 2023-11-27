@@ -1,0 +1,19 @@
+<div class="movie-detail-container" *ngIf="movieDetail">
+    <div ng-if="movieDetail.Poster != N/A" class="poster-section">
+      <img [src]="movieDetail.Poster" alt="Movie Poster" class="poster-image">
+    </div>
+    <div class="details-section">
+   
+      <h2>{{ movieDetail.Title }}</h2>
+      <ul>
+        <li>{{ movieDetail.Year }}</li>
+        <li>{{ movieDetail.Rated }}</li>
+        <li>{{ movieDetail.Released }}</li>
+        <li>{{ movieDetail.Runtime }}</li>
+        <li>{{ movieDetail.Genre }}</li>
+        <li>{{ movieDetail.Director }}</li>
+
+      </ul>
+
+    </div>
+  </div>

@@ -1,0 +1,19 @@
+.movie-detail-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  .poster-section {
+    width: 40%; /* Adjust this according to your layout */
+  }
+  
+  .details-section {
+    width: 55%; /* Adjust this according to your layout */
+  }
+  
+  .poster-image {
+    max-width: 100%;
+    height: auto;
+  }

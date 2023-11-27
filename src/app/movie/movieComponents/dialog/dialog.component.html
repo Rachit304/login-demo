@@ -1,0 +1,10 @@
+<div>
+  <h1 mat-dialog-title>Are you sure?</h1>
+  <div mat-dialog-content>Do You want to see details of Movie : {{data.name}} </div>
+
+  <input matInput [(ngModel)]="userInput">
+  <div mat-dialog-actions >
+      <button mat-button (click)="onClickOk()">Ok</button>
+      <button mat-button (click)="onClose()">Cancel</button>
+  </div>
+</div>

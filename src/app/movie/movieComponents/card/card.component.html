@@ -1,0 +1,13 @@
+
+<mat-card class="movies-grid" *ngIf="movie">
+    <mat-card-header>
+        <mat-card-title>{{ movie.Title}}</mat-card-title>
+    </mat-card-header>
+    <div *ngIf="movie.Poster !== 'N/A'" class="poster-container">
+        <img mat-card-image src={{movie.Poster}} alt="" class="poster" (click)="movieDetail(movie.imdbID)">
+    </div>  
+    <mat-card-content>
+        <p>{{ movie.Year }}</p>
+    </mat-card-content>
+  
+</mat-card>

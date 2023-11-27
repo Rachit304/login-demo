@@ -1,0 +1,18 @@
+movies-grid {
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+  }
+}
+
+.movie-card {
+
+  margin: 10px;
+}
+
+.poster {
+  height:300px;
+  width: 300px;
+}
+
